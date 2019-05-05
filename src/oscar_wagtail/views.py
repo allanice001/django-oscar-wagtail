@@ -49,8 +49,8 @@ def product_choose(request):
     return render_modal_workflow(
         request,
         'oscar_wagtail/chooser/product_choose.html',
-        'oscar_wagtail/chooser/product_choose.js',
-        {
+        # 'oscar_wagtail/chooser/product_choose.js',
+        template_vars={
             'items': paginated_items,
             'searchform': searchform,
         }
